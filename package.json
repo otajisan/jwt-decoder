@@ -1,0 +1,52 @@
+{
+  "name": "jwt-decoder",
+  "version": "1.0.0",
+  "description": "JWT decoder",
+  "main": "dist/index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "decode": "ts-node src/index.ts",
+    "test": "jest",
+    "prepublishOnly": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/otajisan/jwt-decoder.git"
+  },
+  "author": "otajisan",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/otajisan/jwt-decoder/issues"
+  },
+  "homepage": "https://github.com/otajisan/jwt-decoder#readme",
+  "devDependencies": {
+    "@babel/core": "^7.18.6",
+    "@babel/preset-env": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/jest": "^28.1.4",
+    "@types/jsonwebtoken": "^8.5.8",
+    "@types/node": "^18.0.2",
+    "@typescript-eslint/eslint-plugin": "^5.30.5",
+    "@typescript-eslint/parser": "^5.30.5",
+    "babel-jest": "^28.1.2",
+    "eslint": "^8.19.0",
+    "eslint-config-prettier": "^8.5.0",
+    "jest": "^28.1.2",
+    "prettier": "^2.7.1",
+    "ts-jest": "^28.0.5",
+    "tslint": "^6.1.3",
+    "typescript": "^4.7.4"
+  },
+  "volta": {
+    "node": "16.15.0",
+    "npm": "8.5.5"
+  },
+  "dependencies": {
+    "jsonwebtoken": "^8.5.1",
+    "jwt-decode": "^3.1.2",
+    "ts-node": "^10.8.2"
+  }
+}
